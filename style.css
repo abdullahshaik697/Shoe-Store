@@ -2,8 +2,6 @@ body {
     margin: 0%;
     padding: 0%;
     font-family: "Roboto", serif;
-    /* background: lightgray; */
-
 }
 
 nav {
@@ -13,43 +11,41 @@ nav {
 }
 
 .navTop {
-    /* padding: 0; */
-    /* margin: 0%; */
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.search{
+
+.search {
     display: flex;
     align-items: center;
     background-color: lightgray;
     padding: 5px 10px;
     border-radius: 10px;
 }
-.searchInput{
+
+.searchInput {
     height: 30px;
     margin: 0px 10px;
     background-color: transparent;
-    border:none;
+    border: none;
     color: black;
 }
-.limitedOffer{
+
+.limitedOffer {
     font-size: 1.8rem;
 }
+
 .navBottom {
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
     justify-content: center;
 }
 
 .menuItem {
-    /* border: 1px solid red; */
     margin-right: 50px;
     cursor: pointer;
     color: lightgray;
-    /* font-weight: 900; */
 }
 
 /* Slider */
@@ -59,7 +55,6 @@ nav {
     clip-path: polygon(0 0, 100% 0, 100% 78%, 0 62%);
     color: white;
     height: 700px;
-    /* width: 100vw; */
 }
 
 .sliderWrapper {
@@ -68,13 +63,9 @@ nav {
     overflow: hidden;
     transition: 1.2s all ease-in-out;
     height: 480px;
-    /* border: 1px solid red; */
-    /* border: 1px solid red; */
 }
 
 .sliderItem {
-    /* border: 1px solid red; */
-    /* border: 1px solid yellow; */
     width: 100vw;
     display: flex;
     align-items: center;
@@ -103,7 +94,7 @@ nav {
 }
 
 .sliderItem:nth-child(2) .sliderBg {
-    background-color:   rgb(122, 121, 121);
+    background-color: rgb(122, 121, 121);
 }
 
 .sliderItem:nth-child(3) .sliderBg {
@@ -162,7 +153,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    /* border: 1px solid red; */
     margin: 0%;
 }
 
@@ -198,7 +188,6 @@ nav {
     width: 100%;
     background-color: whitesmoke;
     position: relative;
-    /* clip-path: polygon(0 0, 100% 0, 100% 78%, 0 62%); */
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -206,7 +195,7 @@ nav {
     position: absolute;
     top: 10%;
     left: 10%;
-    /* border: 1px solid red; */
+    filter: drop-shadow(-15px 15px 15px #000000);
 }
 
 .productDetails {
@@ -242,7 +231,6 @@ nav {
 
 .productDesc {
     color: gray;
-    /* font-style: 24px; */
 }
 
 .colors,
@@ -270,7 +258,8 @@ nav {
     margin-right: 10px;
     cursor: pointer;
     font-size: 20px;
-    &:hover{
+
+    &:hover {
         transition: .2s all ease-out;
         background-color: black;
         color: white;
@@ -293,10 +282,10 @@ nav {
     display: flex;
     display: none;
     flex-direction: column;
-    /* border: 1px solid blue; */
     -webkit-box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 13 2 rgba(0, 0, 0, 0.3);
 }
+
 
 .payTitle {
     font-size: 20px;
@@ -321,23 +310,33 @@ nav {
 }
 
 .cardIcons {
-    border: 1px solid red ;
     display: flex;
 }
 
 .cardIcon {
     margin-right: 10px;
-    /* border: 1px solid red ; */
+    font-size: 23px;
+}
+
+.cardIcon:nth-child(1) {
+    color: rgb(201, 2, 2);
+}
+
+.cardIcon:nth-child(2) {
+    color: rgb(0, 30, 202);
+}
+
+.cardIcon:nth-child(3) {
+    color: rgb(167, 155, 0);
 }
 
 .cardInfo {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .sm {
-    /* border: 1px solid red ; */
     width: 26%;
 
 }
@@ -354,7 +353,8 @@ nav {
     color: white;
     font-weight: 400;
 }
-.close{
+
+.close {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -365,48 +365,54 @@ nav {
     text-align: center;
     cursor: pointer;
     padding: 3px;
-    /* align-content: center; */
 }
 
 /* GALLERY */
 
-.gallery{
+.gallery {
     padding: 50px;
     display: flex;
-    /* background-color: red; */
 }
-.galleryItem{
-    /* background-color: green; */
+
+.galleryItem {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 10px;
-    /* width: 33%; */
+   
 }
-.galleryItem:nth-child(1) h1{
+
+.galleryItem:nth-child(1) h1 {
     font-size: 2.6rem;
     transform: rotate(7deg);
 }
-.galleryItem:nth-child(2) h1{
+
+.galleryItem:nth-child(2) h1 {
     font-size: 2.6rem;
     transform: rotate(-8deg);
 }
-.galleryItem:nth-child(3) h1{
+
+.galleryItem:nth-child(3) h1 {
     font-size: 2.6rem;
     transform: rotate(7deg);
 }
-.galleryImage{
+
+.galleryImage {
     width: 90%;
+  transition: .3s all ease;
+   
 }
 
 /* NEW SEASON */
 
-.newSeason{
+.newSeason {
     display: flex;
+    margin-top: 10px;
 }
-.nsItem{
+
+.nsItem {
     flex: 1;
     background-color: black;
     color: white;
@@ -417,62 +423,64 @@ nav {
     text-align: center;
 }
 
-.nsItem img{
+.nsItem img {
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 
-.nsTitle{
-font-size: 40px;
+.nsTitle {
+    font-size: 40px;
 
 }
-.nsButton{
+
+.nsButton {
     padding: 15px;
     font-weight: 600;
     background-color: white;
     color: black;
-    /* border: none; */
     margin-bottom: 10px;
     cursor: pointer;
     border: 2px solid white;
     border-radius: 20px;
     transition: .2s all ease-in;
-    &:hover{
+
+    &:hover {
         transition: .2s all ease-in;
         background-color: black;
         color: white;
-        /* border-radius: 20px; */
     }
 }
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
 
 }
 
-.footerLeft{
+.footerLeft {
     flex: 2;
     display: flex;
-        justify-content: space-between;
-        padding: 50px;    
+    justify-content: space-between;
+    padding: 50px;
 }
-.fMenuTitle{
+
+.fMenuTitle {
     font-size: 16px;
-
 }
 
-.fMenuList{
+.fMenuList {
     padding: 0;
     list-style: none;
 }
-.flistItem{
+
+.flistItem {
     margin-bottom: 10px;
     color: gray;
     cursor: pointer;
 }
-.footerRight{
+
+.footerRight {
     flex: 1;
     padding: 50px;
     display: flex;
@@ -480,39 +488,38 @@ footer{
     justify-content: space-between;
 }
 
-.fInput{
+.fInput {
     padding: 6px 15px;
-border-radius: 15px ;
+    border-radius: 15px;
 
 }
 
-.fButton{
-    border-radius: 15px ;
+.fButton {
+    border-radius: 15px;
     padding: 7px 15px;
     background-color: black;
     color: white;
     border: 1px solid black;
-    
-    &:hover{
+
+    &:hover {
         background-color: white;
         color: black;
         transition: .2s all ease-in;
     }
 }
 
-.fIcons{
+.fIcons {
     display: flex;
-    border: 1px solid red;
 
 }
 
-.fIcons i{
+.fIcons i {
     font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.copyright{
+.copyright {
     font-weight: 300;
     font-size: 14px;
 }

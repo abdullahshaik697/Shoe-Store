@@ -158,6 +158,21 @@
 /* GALLERY */
 
 
+.gallery {
+    padding: 20px;
+   
+    flex-direction: column;
+}
+
+.galleryItem {
+    margin: 20px 10px 10px 10px ;
+
+}
+.galleryItem h1{
+    display: none;
+}
+
+
 }
 
 

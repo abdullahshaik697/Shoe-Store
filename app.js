@@ -10,13 +10,13 @@ menuItems.forEach((item,index)=>{
 
 let payButton = document.querySelector(".payButton")
 let payment = document.querySelector(".payment")
-let close = document.querySelector(".close")
+let closeBtn = document.querySelector(".close")
 
 payButton.addEventListener("click",()=>{
     payment.style="display:flex"
 })
 
-close.addEventListener("click",()=>{
+closeBtn.addEventListener("click",()=>{
     payment.style="display:none"
 })
 
